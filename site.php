@@ -31,9 +31,9 @@ class SppagebuilderAddonEmail_Cloak extends SppagebuilderAddons
 
 		$output  = '<div class="sppb-addon sppb-addon-accordion ' . $class . '">';
 		if ($icon_position == 'left') {
-			$output .= ($icon) ? '<i class="fa ' . $icon . '" aria-hidden="true"></i> ' . JHtml::_('email.cloak', $email, 0) : JHtml::_('email.cloak', $email, 0);
+			$output .= ($icon) ? '<i class="fa ' . $icon . '" aria-hidden="true"></i> ' . JHtml::_('email.cloak', $email) : JHtml::_('email.cloak', $email);
 		} else {
-			$output .= ($icon) ? JHtml::_('email.cloak', $email, 0) . ' <i class="fa ' . $icon . '" aria-hidden="true"></i>' : JHtml::_('email.cloak', $email, 0);
+			$output .= ($icon) ? JHtml::_('email.cloak', $email) . ' <i class="fa ' . $icon . '" aria-hidden="true"></i>' : JHtml::_('email.cloak', $email);
 		}
 		$output .= '</div>';
 
